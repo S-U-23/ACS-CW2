@@ -1,0 +1,124 @@
+/* ======================== SearchPage.css ======================== */
+
+/* Main page container */
+.Body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 10vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem 0;
+}
+
+/* Welcome banner */
+#p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  background-color: bisque;
+  padding: 2rem 4rem;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  box-sizing: border-box;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Container for search input and filters */
+.search-container {
+  max-width: 800px;
+  width: 90%;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Headings inside search container */
+.search-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.search-container h3 {
+  text-align: center;
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+  color: #333;
+}
+
+/* Layout for filter inputs */
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 15px;
+}
+
+/* Labels for each filter */
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs, selects, and date pickers styling */
+.filters input[type="text"],
+.filters input[type="date"],
+.filters select {
+  margin-top: 0.5rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 45px;
+}
+
+/* Focus state for better UX */
+.filters input[type="text"]:focus,
+.filters input[type="date"]:focus,
+.filters select:focus {
+  border-color: #ff8c42;
+  background-color: #fff8f0;
+}
+
+/* Top search bar */
+.search-container input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-container input[type="text"]:focus {
+  border-color: #ff8c42;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #p {
+    font-size: 2rem;
+    padding: 1.5rem 2rem;
+    width: 90%;
+  }
+
+  .filters {
+    grid-template-columns: 1fr; /* Stack filters on small screens */
+  }
+}
