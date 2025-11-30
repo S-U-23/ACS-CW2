@@ -1,0 +1,116 @@
+{
+  "properties": [
+    {
+      "id":"prop1",
+      "type":"House",
+      "bedrooms":3,
+      "price":750000,
+      "tenure":"Freehold",
+      "description":"Three-bedroom semi-detached family home just 0.5 miles from Petts Wood station. Features two receptions, a spacious kitchen/breakfast room, conservatory, utility room, and cloakroom. Upstairs: three bedrooms, family bathroom, and separate WC. Benefits include double glazing, gas central heating, and a well-presented interior, close to shops, schools, and woodland...",
+      "location":"Petts Wood Road, Petts Wood, Orpington BR5",
+      "picture":"images/prop1images/frontdoor.jpg",
+      "url":"properties/prop1.html",
+      "added": {
+        "month":"October",
+        "day":12,
+        "year":2022
+      }
+    },
+    {
+      "id":"prop2",
+      "type":"Flat",
+      "bedrooms":2,
+      "price":399995,
+      "tenure":"Freehold",
+      "description":"Immaculate two-bedroom, two-bathroom flat with a private courtyard garden. The modern open-plan kitchen/living area features solid wood floors, integrated appliances, and bi-fold doors to the garden. Both bedrooms are doubles, with a family bathroom and separate wet room. Additional highlights include walnut doors, Sky TV/aerial wiring, and a 10-year building guarantee...",
+      "location":"Crofton Road Orpington BR6",
+      "picture":  "/images/prop2images/outsideflatview.jpg",
+      "url":"properties/prop2.html",
+      "added": {
+        "month":"September",
+        "day":14,
+        "year":2022
+      }
+    },
+    {
+      "id": "prop3",
+      "type": "House",
+      "bedrooms": 4,
+      "price": 650000,
+      "tenure": "Leasehold",
+      "description": "A beautifully presented four-bedroom family home in the highly sought-after Britannia Village, Royal Docks, with a private rear garden. The property features a spacious open-plan reception and kitchen, perfect for modern family living, and a loft conversion with a pseudo balcony. Additional highlights include contemporary fittings throughout, generous living space, and excellent transport links nearby, making this an ideal home for families or professionals seeking style and convenience...",
+      "location": "Fairfax Mews, Newham, London E16",
+      "picture": "images/prop3images/frontdoor.png",
+      "url": "properties/prop3.html",
+      "added": {
+        "month": "November",
+        "day": 11,
+        "year": 2025
+      }
+    },
+    {
+      "id": "prop4",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 200000,
+      "tenure": "Leasehold",
+      "description": "A charming one-bedroom split-level flat located in a quiet residential area of Wallington. This property boasts a bright living space with large windows, a modern kitchen with built-in appliances, and a cozy bedroom with ample storage. The bathroom has contemporary fixtures and the flat benefits from excellent local transport links and nearby amenities, making it ideal for first-time buyers or investors...",
+      "location": "Capworth Street, Leyton, E10",
+      "picture": "images/prop4images/frontdoor.png",
+      "url": "properties/prop4.html",
+      "added": {
+        "month": "August",
+        "day": 5,
+        "year": 2025
+      }
+    },
+    {
+      "id": "prop5",
+      "type": "House",
+      "bedrooms": 6,
+      "price": 1750000,
+      "tenure": "Leasehold",
+      "description": "A stunning six-bedroom detached home set in a prestigious area near Blackheath Village. Features include a grand entrance hall, multiple reception rooms, a modern kitchen/dining space, and a landscaped garden. Upstairs are spacious bedrooms with en-suite bathrooms, perfect for a large family. Additional highlights include a home office, garage, and proximity to excellent schools, parks, and local amenities...",
+      "location": "West Park, Eltham SE9",
+      "picture": "images/prop5images/frontdoor.png",
+      "url": "properties/prop5.html",
+      "added": {
+        "month": "February",
+        "day": 13,
+        "year": 2024
+      }
+    },
+    {
+      "id": "prop6",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 100000,
+      "tenure": "Freehold",
+      "description": "This first-floor duplex apartment offers modern living in the heart of Colchester, within walking distance of the city centre, Castle Park, and the train station. It features an open-plan lounge and kitchen, a bright bedroom upstairs, and contemporary bathroom fittings. Perfect for young professionals or investors, the flat benefits from gas central heating, double glazing, and secure entry access...",
+      "location": "East Street, Colchester, Essex CO1, UK",
+      "picture": "images/prop6images/frontdoor.png",
+      "url": "properties/prop6.html",
+      "added": {
+        "month": "October",
+        "day": 15,
+        "year": 2025
+      }
+    },
+    {
+      "id": "prop7",
+      "type": "House",
+      "bedrooms": 2,
+      "price": 480000,
+      "tenure": "Freehold",
+      "description": "A beautifully maintained Victorian terraced home combining period charm with modern comforts. The house includes a spacious living room, updated kitchen, two well-proportioned bedrooms, and a contemporary bathroom. Additional features include a private garden, high ceilings, original fireplaces, and excellent transport links nearby. Ideal for couples or small families looking for a blend of character and convenience...",
+      "location": "St. Winefride's Avenue, Manor Park, London E12",
+      "picture": "images/prop7images/frontdoor.png",
+      "url": "properties/prop7.html",
+      "added": {
+        "month": "February",
+        "day": 25,
+        "year": 2023
+      }
+    }
+  ]
+}
