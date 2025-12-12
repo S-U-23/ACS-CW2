@@ -1,0 +1,282 @@
+.property-details-container {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border: 3px solid #d0d0d0; /* Bigger border */
+}
+
+/* BACK BUTTON */
+.back-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+.back-btn:hover {
+  background-color: #ff4b4b;
+  transform: scale(1.05);
+}
+
+/* HEADER */
+.property-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.property-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e90ff;
+  border-bottom: 3px solid #1e90ff;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.property-location {
+  margin-top: 6px;
+  font-size: 18px;
+  color: #070707;
+}
+
+/* CAROUSEL (Images + arrows + thumbnails) */
+.property-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything */
+}
+
+.main-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center main image */
+  position: relative;
+  border-radius: 12px;
+}
+
+/* Larger main image */
+.main-image {
+  width: 70%;
+  max-width: 750px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Arrows positioned for bigger image */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 26px;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 5;
+}
+.arrow.left { left: 18%; }
+.arrow.right { right: 18%; }
+.arrow:hover { background: rgba(0,0,0,0.8); }
+
+/* Thumbnails (bigger + centered) */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+/* Larger thumbnails */
+.thumb {
+  width: 95px;
+  height: 70px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.thumb.active {
+  border-color: #1e90ff;
+  transform: scale(1.1);
+}
+
+/* MAP */
+.property-map {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  border: 0;
+}
+
+/* DETAILS */
+.property-info {
+  line-height: 1.7;
+  color: #333;
+}
+.property-info h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #1e90ff;
+}
+.property-info p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.property-info strong {
+  color: #222;
+}
+
+
+/* Floorplan container */
+.property-floorplan {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Floorplan image */
+.floorplan-image {
+  max-width: 90%;      /* almost full width */
+  max-height: 600px;   /* limit very tall images */
+  width: auto;         /* preserve horizontal images */
+  height: auto;        /* preserve vertical images */
+  object-fit: contain; /* make sure the entire image fits */
+  margin-bottom: 10px;
+}
+
+/* Floorplan title */
+.property-floorplan h2 {
+
+  margin-bottom: 10px;
+}
+
+/* Overall tabs container */
+.property-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Tab list as horizontal navbar */
+.property-tablist {
+  display: flex;
+  justify-content: space-around; /* Spread tabs evenly */
+  background-color: #3399ff; /* Light blue like title */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 2px solid #007acc; /* Slightly darker border */
+}
+
+/* Individual tab buttons */
+.property-tab {
+  padding: 14px 20px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+  border-bottom: 3px solid transparent;
+  flex: 1; /* Make tabs equal width */
+}
+
+/* Hover effect for tabs */
+.property-tab:hover {
+  background-color: #007acc; /* Slightly darker on hover */
+}
+
+/* Active tab */
+.react-tabs__tab--selected.property-tab {
+  background-color: #007acc; /* Active tab uses same darker blue */
+  border-bottom: 3px solid #005f99; /* Subtle highlight */
+}
+
+/* Tab panel content */
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .property-title { font-size: 28px; }
+  .back-btn { padding: 10px 16px; font-size: 14px; }
+  .main-image-container { max-width: 100%; }
+  .thumb { width: 65px; height: 45px; }
+  .property-map { height: 280px; }
+  .react-tabs__tab { padding: 8px 16px; font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .property-title { font-size: 22px; }
+  .back-btn { width: 100%; text-align: center; }
+  .thumbnails { gap: 8px; }
+  .thumb { width: 55px; height: 40px; }
+  .property-map { height: 220px; }
+}
+/* Tabs Container */
+.property-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Tab List */
+.property-tablist {
+  display: flex;
+  gap: 5px; /* small spacing between square tabs */
+  margin-bottom: 15px;
+  padding-left: 0;
+}
+
+/* Individual Tabs - square style */
+.property-tab {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #000000; /* main blue color */
+  font-weight: 500;
+  font-size: 15px;
+  background-color: transparent; /* no background */
+  border: 1px solid #4a90e2; /* blue square border */
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover */
+.property-tab:hover {
+  background-color: #4a90e2;
+  color: #000000;
+}
+
+/* Active Tab */
+.react-tabs__tab--selected.property-tab {
+  background-color: #4a90e2;
+  color: #050505;
+  border: 1px solid #4a90e2;
+}
+
+/* Tab Panel */
+.property-tabpanel {
+  padding: 10px 0;
+}
