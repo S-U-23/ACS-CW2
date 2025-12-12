@@ -213,23 +213,7 @@
 
 /* Tab panel content */
 
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .property-title { font-size: 28px; }
-  .back-btn { padding: 10px 16px; font-size: 14px; }
-  .main-image-container { max-width: 100%; }
-  .thumb { width: 65px; height: 45px; }
-  .property-map { height: 280px; }
-  .react-tabs__tab { padding: 8px 16px; font-size: 14px; }
-}
 
-@media (max-width: 480px) {
-  .property-title { font-size: 22px; }
-  .back-btn { width: 100%; text-align: center; }
-  .thumbnails { gap: 8px; }
-  .thumb { width: 55px; height: 40px; }
-  .property-map { height: 220px; }
-}
 /* Tabs Container */
 .property-tabs {
   display: flex;
@@ -279,4 +263,81 @@
 /* Tab Panel */
 .property-tabpanel {
   padding: 10px 0;
+}
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .property-title {
+    font-size: 26px; 
+  }
+
+  .back-btn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .main-image-container {
+    max-width: 100%;
+  }
+
+  .main-image {
+    width: 100%; 
+    height: auto;
+  }
+
+  .thumb {
+    width: 60px;
+    height: 40px;
+  }
+
+  .property-map {
+    height: 250px; 
+  }
+
+  .react-tabs__tab {
+    padding: 7px 14px;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .property-details-container {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .property-title {
+    font-size: 22px;
+  }
+
+  .back-btn {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 13px;
+  }
+
+  .thumbnails {
+    gap: 6px;
+  }
+
+  .thumb {
+    width: 50px;
+    height: 35px;
+  }
+
+  .property-map {
+    height: 220px;
+  }
+
+  .react-tabs__tab {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .floorplan-image {
+    max-width: 100%;
+    height: auto;
+  }
 }
