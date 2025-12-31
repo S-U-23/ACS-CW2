@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import SearchPage from "./components/SearchPage";
@@ -12,18 +12,15 @@ import "./App.css";
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // ✅ LOAD favourites from localStorage
   const [favourites, setFavourites] = useState(() => {
     const saved = localStorage.getItem("favourites");
     return saved ? JSON.parse(saved) : [];
   });
 
-  // ✅ SAVE favourites whenever they change
   useEffect(() => {
     localStorage.setItem("favourites", JSON.stringify(favourites));
   }, [favourites]);
 
-  // --- Filters state ---
   const [filters, setFilters] = useState({
     type: "Any",
     minPrice: "Any",
@@ -35,35 +32,31 @@ function App() {
     postcode: "",
   });
 
-  // ✅ Add favourite
   const addFavourite = (house) => {
     setFavourites((prev) =>
       prev.some((h) => h.id === house.id) ? prev : [...prev, house]
     );
   };
 
-  // ✅ Remove favourite
   const removeFavourite = (house) => {
     setFavourites((prev) =>
       prev.filter((h) => h.id !== house.id)
     );
   };
 
-  // ✅ Clear all favourites
   const clearFavourites = () => {
     setFavourites([]);
     localStorage.removeItem("favourites");
   };
 
   return (
-    
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
           element={
-            <> 
-              <Header/>
+            <>
+              <Header />
               <SearchPage
                 searchTerm={searchTerm}
                 setSearchTerm={setSearchTerm}
@@ -91,15 +84,13 @@ function App() {
                   />
                 </div>
               </div>
-              <Footer/>
+              <Footer />
             </>
           }
-       
         />
-
         <Route path="/property/:id" element={<PropertyDetailsPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
