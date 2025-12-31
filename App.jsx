@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import SearchPage from "./components/SearchPage";
@@ -56,7 +56,8 @@ function App() {
   };
 
   return (
-    <Router>
+    
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"
@@ -98,7 +99,7 @@ function App() {
 
         <Route path="/property/:id" element={<PropertyDetailsPage />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
